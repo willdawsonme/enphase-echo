@@ -1,13 +1,5 @@
-#Sample AWS Lambda function for Alexa
-A simple [AWS Lambda](http://aws.amazon.com/lambda) function that demonstrates how to write a skill for the Amazon Echo using the Alexa SDK.
-
-## Concepts
-This sample shows how to create a Lambda function for handling Alexa Skill requests that:
-
-- Web service: communicate with an external web service to get events for specified days in history (Wikipedia API)
-- Pagination: after obtaining a list of events, read a small subset of events and wait for user prompt to read the next subset of events by maintaining session state
-- Dialog and Session state: Handles two models, both a one-shot ask and tell model, and a multi-turn dialog model.
-- SSML: Using SSML tags to control how Alexa renders the text-to-speech.
+#Enphase Enlighten Skill for the Amazon Echo
+A skill for the Amazon Echo that retieves data on Enphase systems using the [Enphase Enlighten API] (https://developer.enphase.com/).  Runs on Amazon cloud servers using [AWS Lambda](http://aws.amazon.com/lambda)
 
 ## Setup
 To run this example skill you need to do two things. The first is to deploy the example code in lambda, and the second is to configure the Alexa skill to use Lambda.
@@ -16,7 +8,7 @@ To run this example skill you need to do two things. The first is to deploy the 
 1. Go to the AWS Console and click on the Lambda link. Note: ensure you are in us-east or you won't be able to use Alexa with Lambda.
 2. Click on the Create a Lambda Function or Get Started Now button.
 3. Skip the blueprint
-4. Name the Lambda Function "History-Buff-Example-Skill".
+4. Name the Lambda Function "Enphase-Echo".
 5. Select the runtime as Node.js
 6. Go to the the src directory, select all files and then create a zip file, make sure the zip file does not contain the src directory itself, otherwise Lambda function will not work.
 7. Select Code entry type as "Upload a .ZIP file" and then upload the .zip file to the Lambda
@@ -30,7 +22,7 @@ To run this example skill you need to do two things. The first is to deploy the 
 
 ### Alexa Skill Setup
 1. Go to the [Alexa Console](https://developer.amazon.com/edw/home.html) and click Add a New Skill.
-2. Set "History Buff" for the skill name and "history buff" as the invocation name, this is what is used to activate your skill. For example you would say: "Alexa, Ask History Buff what happened on August thirtieth."
+2. Set "Enphase Echo" for the skill name and "enlighten" as the invocation name, this is what is used to activate your skill. For example you would say: "Alexa, Ask Enlighten how much power my array is producing."
 3. Select the Lambda ARN for the skill Endpoint and paste the ARN copied from above. Click Next.
 4. Copy the Intent Schema from the included IntentSchema.json.
 5. Copy the Sample Utterances from the included SampleUtterances.txt. Click Next.
@@ -44,18 +36,12 @@ To run this example skill you need to do two things. The first is to deploy the 
 Example user interactions:
 
 ### One-shot model:
-  User:  "Alexa, ask History Buff what happened on August thirtieth."
-  Alexa: "For August thirtieth, in 2003, [...] . Wanna go deeper in history?"
-  User: "No."
-  Alexa: "Good bye!"
+  User:  "Alexa, ask Enlighten how much energy my array produced last January."
+  Alexa: "In January of 2015, your array produced XX kWh."
 
 ### Dialog model:
-  User:  "Alexa, open History Buff"
-  Alexa: "History Buff. What day do you want events for?"
-  User:  "August thirtieth."
-  Alexa: "For August thirtieth, in 2003, [...] . Wanna go deeper in history?"
-  User:  "Yes."
-  Alexa: "In 1995, Bosnian war [...] . Wanna go deeper in history?"
-  User: "No."
-  Alexa: "Good bye!"
+  User:  "Alexa, ask Enlighten how much energy my array produced."
+  Alexa: "Over what time period do you want to know the energy production of your array?"
+  User:  "Last January"
+  Alexa: "In January of 2015, your array produced XX kWh."
 
