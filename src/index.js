@@ -1,19 +1,4 @@
 /**
-    Copyright 2014-2015 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-
-    Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with the License. A copy of the License is located at
-
-        http://aws.amazon.com/apache2.0/
-
-    or in the "license" file accompanying this file. This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
-*/
-
-/**
-	This is a protoype of the Enphase Alexa skillset.  It allows users to querry information on the operation of their solar array.
- */
-
-
-/**
  * App ID for the skill
  */
 var APP_ID = 'amzn1.echo-sdk-ams.app.7965ade7-3b63-48de-a2dd-6480046f4645';
@@ -33,9 +18,9 @@ var AlexaSkill = require('./AlexaSkill');
  * More information can be found at this here:
  * https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/linking-an-alexa-user-with-a-user-in-your-system
  */
-var urlBase = "https://api.enphaseenergy.com/api/v2/systems/67/";
-var user_id = "4d7a45774e6a41320a";
-var api_key = "5e01e16f7134519e70e02c80ef61b692";
+var urlBase = "https://api.enphaseenergy.com/api/v2/systems/772052/";
+var user_id = "4e5467774e7a49340a";
+var api_key = "46afa32aa1d650c33b9f948921601226";
 
 /**
  * EnphaseSkill is a child of AlexaSkill.
