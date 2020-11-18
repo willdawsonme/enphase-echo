@@ -1,28 +1,28 @@
-GetEnergy how much energy did I produce on {StartDate}
-GetEnergy how much enery did I produced {StartDate}
-GetEnergy how much enery did I produce {StartDate}
-GetEnergy how much energy did my array produce {StartDate}
-GetEnergy how much energy have I produce {StartDate}
-GetEnergy how much energy my re produced {StartDate}
-GetEnergy how much energy my reproduced {StartDate}
-GetEnergy how much energy my reproduce {StartDate}
-GetEnergy how much energy my are reproduce {StartDate}
-GetEnergy how much energy my are reproduced {StartDate}
-GetEnergy how much energy my are you {StartDate}
-GetEnergy how much energy my are you produce {StartDate}
-GetEnergy how much energy my are you produced {StartDate} 
-GetEnergy how much energy I produce {StartDate}
-GetEnergy how much energy I produced {StartDate}
+how much energy did I produce on {StartDate}
+how much enery did I produced {StartDate}
+how much enery did I produce {StartDate}
+how much energy did my array produce {StartDate}
+how much energy have I produce {StartDate}
+how much energy my re produced {StartDate}
+how much energy my reproduced {StartDate}
+how much energy my reproduce {StartDate}
+how much energy my are reproduce {StartDate}
+how much energy my are reproduced {StartDate}
+how much energy my are you {StartDate}
+how much energy my are you produce {StartDate}
+how much energy my are you produced {StartDate} 
+how much energy I produce {StartDate}
+how much energy I produced {StartDate}
 
 GetPower what is my power
 GetPower whats my power
 GetPower how much power
 
-GetStatus status
-GetStatus whats my status
-GetStatus what is my status
-GetStatus whats the status
-GetStatus whats the status
-GetStatus what the status
-GetStatus what is the status of my array
-GetStatus whats the status of my array
+status
+whats my status
+what is my status
+whats the status
+whats the status
+what the status
+what is the status of my array
+whats the status of my array

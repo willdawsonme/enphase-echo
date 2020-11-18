@@ -1,7 +1,7 @@
 /**
  * App ID for the skill
  */
-var APP_ID = 'amzn1.echo-sdk-ams.app.7965ade7-3b63-48de-a2dd-6480046f4645';
+var APP_ID = 'amzn1.ask.skill.72f2573f-5c74-4ad9-ac30-9029f2d3264a';
 
 
 var https = require('https');
